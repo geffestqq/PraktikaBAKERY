@@ -1,0 +1,42 @@
+﻿<Window x:Class="Bakery.AuthorizationPage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Bakery"
+        mc:Ignorable="d"
+       Title="Авторизация" Height="200" Width="300"
+        WindowStartupLocation="CenterScreen"
+        Background="AliceBlue"
+        Name="AuthorizForm">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="auto"></ColumnDefinition>
+            <ColumnDefinition Width="45*"></ColumnDefinition>
+            <ColumnDefinition Width="149*"/>
+        </Grid.ColumnDefinitions>
+        <Label Name="lblEnterLogin" Grid.Row="0" Grid.Column="0"
+               Content="Введите логин:"
+               VerticalAlignment="Center" Margin="0,15,0.333,15.667"></Label>
+        <Label Name="lblEnterPassword" Grid.Row="1" Grid.Column="0"
+               Content="Введите пароль:"
+               VerticalAlignment="Center" Margin="0,15.333,0.333,16"></Label>
+        <PasswordBox Name="tbEnterLogin" Grid.Row="0"
+                VerticalAlignment="Center" Grid.ColumnSpan="3" Margin="99,19,0.333,19.667"/>
+        <PasswordBox Name="tbEnterPassword" Grid.Row="1"
+                 VerticalAlignment="Center" Grid.ColumnSpan="3" Margin="99,19.333,0.333,20"/>
+        <UniformGrid Rows="2" Grid.Column="0" Grid.Row="2"
+                     Grid.ColumnSpan="3" Margin="0,0,0.333,-0.333">
+            <Button Name="bt_Enter" Content="Вход" 
+                Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="2" Click="bt_Enter_Click"></Button>
+            <Button Name="bt_Regestration" Content="Регистрация"
+                Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="2" Click="bt_Regestration_Click"></Button>
+        </UniformGrid>
+
+    </Grid>
+</Window>

@@ -1,0 +1,47 @@
+﻿<Window x:Class="Bakery.Settings"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Bakery"
+        mc:Ignorable="d"
+        Title="Настройки" Height="600" Width="800" WindowStartupLocation="CenterScreen" Background="{DynamicResource CommonBackground}">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+
+        </Grid.ColumnDefinitions>
+
+        <Label FontFamily="Times New Roman" Name="lbl_Settings" Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="9" Content="Настройки" HorizontalContentAlignment="Center" FontSize="16" VerticalAlignment="Center"/>
+        <Label FontFamily="Times New Roman" Name="lbl_Color" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="3" Content="Выбирите цвет страницы:" HorizontalContentAlignment="Left" FontSize="14" VerticalAlignment="Center"/>
+        <Button FontFamily="Times New Roman" Name="bt_White" Content= "Бежевый" Grid.Column="1" Grid.Row="2" Grid.ColumnSpan="2" Height="30" Click="bt_White_Click"/>
+        <Button FontFamily="Times New Roman" x:Name="bt_White_Copy" Content= "Назад" Grid.Column="8" Grid.Row="10" Grid.ColumnSpan="3" Height="30"  Margin="10,0,62,22" Click="bt_White_Copy_Click"/>
+
+    </Grid>
+
+</Window>
